@@ -39,6 +39,23 @@ c=0
 5//10=0 -> c=4
 
 
+
+n=496
+d=n
+c=0
+
+d=d//10 => 496//10 =49 => c=c+1 =1
+d=d//10 => 49//10 = 4 => c=c+1 =2
+d=d//10 => 4//10 => 0 => c=c+1 =3
+
+
+d2=n
+
+d2%10 =>6
+d2=d2//10 => 49
+
+
+
 '''
 
 #Logic to calculate total no of digits in a number
@@ -46,31 +63,36 @@ c=0
 absolute value func
 abs()
 '''
-#Taking Input from user
-n =int(input("Enter a Number"))
+
+#Taking input of range from user
+n1 =int(input("Enter Start Number"))
+n2 =int(input("Enter End Number"))
+
+for n in range(n1,n2+1):
 #Converting negative into positive and making a copy
-d =abs(n)
-cal=0
-d2=abs(n)
+ d =abs(n)
+ cal=0
+ d2=abs(n)
 #Count to find total number of digits
-count =0
+ count =0
 
 #Logic to cal total number of digits
-while d!=0:
-  d=d//10
-  count =count +1
+ while d!=0:
+   d=d//10
+   count =count +1
+   
   
 #Logic to cal power of Individual digit
-while d2!=0:
-  r=d2%10
-  d2=d2//10
-  cal =cal+(r**count)
+ while d2!=0:
+   r=d2%10
+   d2=d2//10
+   cal =cal+(r**count)
 
 #Checking number is armstrong or not
-if cal==abs(n):
-  print("{} is a Armstrong Number".format(n))
-else:
-  print("{} is not a Armstrong Number".format(n))
+ if cal==abs(n):
+   print("{} is a Armstrong Number".format(n))
+#  else:
+#    print("{} is not a Armstrong Number".format(n))
   
   
 
@@ -95,6 +117,7 @@ cal =cal +(r**count)
 
 
 '''
+
 
   
 
