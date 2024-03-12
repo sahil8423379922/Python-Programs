@@ -28,10 +28,16 @@ output
 a=[10,4,3,2,1]
 ans=[4,3,2,1,0]
 
-5-Maximum Number of characters Found in Sentences
+5-Total Number of characters Found in Sentences excluding spaces
 a="Computer is a electronic machine"
 #list()
 total whitespace and total character
 
 
 '''
+g=0
+l=[[1,2,3],[4,5,3]]
+for x in l:
+  s=sum(x)
+  g=max(g,s)
+print(g)
