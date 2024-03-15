@@ -9,7 +9,8 @@ a={1:'pens',2:'pencil',3:'notebook',4:'ruler',5:'book'}
 # x=(1,2,3,4)
 
 # print(a.fromkeys(x))
-a={}
+a=set()
 
-c=a.get(2)
-print(c)
+print(type(a))
+# c=a.get(2)
+# print(c)
